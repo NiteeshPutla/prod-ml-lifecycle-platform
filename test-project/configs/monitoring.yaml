@@ -1,0 +1,16 @@
+alert_channels: []
+auto_retrain_on_drift: false
+check_interval_minutes: 60
+chi2_threshold: 0.05
+drift_detection_methods:
+- psi
+- ks
+- chi2
+feature_importance_threshold: 0.01
+ks_threshold: 0.05
+min_samples_for_drift: 100
+model_id: ''
+model_version: latest
+prediction_drift_threshold: 0.1
+psi_threshold: 0.2
+retrain_config: null

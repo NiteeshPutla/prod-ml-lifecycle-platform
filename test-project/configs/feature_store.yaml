@@ -1,0 +1,8 @@
+default_ttl_seconds: 86400
+enable_feature_versioning: true
+entity_types: []
+offline_store:
+  path: /Users/niteeshputla/Downloads/prod-ml-lifecycle-platform/test-project/data/offline_store.db
+online_store:
+  redis_url: redis://localhost:6379/0
+registry: {}

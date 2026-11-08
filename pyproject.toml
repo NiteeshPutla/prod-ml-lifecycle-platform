@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prod-ml-lifecycle-platform"
+version = "1.0.0"
+description = "Production ML Lifecycle Platform: Feature Store, Training, Serving, Real-Time A/B Testing & Monitoring for Ranking, Recommendation, Search & Ads"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi>=0.100.0",
+    "uvicorn>=0.22.0",
+    "pydantic>=2.0.0",
+    "numpy>=1.24.0",
+    "pandas>=2.0.0",
+    "scikit-learn>=1.3.0",
+    "xgboost>=1.7.0",
+    "torch>=2.0.0",
+    "sqlalchemy>=2.0.0",
+    "httpx>=0.24.0",
+    "typer>=0.9.0",
+    "rich>=13.0.0",
+    "PyYAML>=6.0",
+    "scipy>=1.10.0",
+    "statsmodels>=0.14.0"
+]
+
+[tool.setuptools]
+packages = ["core", "features", "training", "serving", "simulator", "experimentation", "monitoring", "cli"]

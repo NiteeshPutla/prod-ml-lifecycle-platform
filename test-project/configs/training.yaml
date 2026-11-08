@@ -1,0 +1,35 @@
+artifact_location: null
+data_source:
+  entity_type: user_item
+  type: offline_store
+  db_path: /Users/niteeshputla/Downloads/prod-ml-lifecycle-platform/test-project/data/offline_store.db
+early_stopping_rounds: 50
+eval_metric: auc
+experiment_name: ranking_models
+feature_list:
+- user_age
+- user_gender
+- user_country
+- user_past_ctr
+- user_session_count_7d
+- item_category
+- item_price
+- item_ctr_7d
+- item_cvr_7d
+- position
+- user_item_affinity
+gpu_enabled: false
+hyperparameters:
+  colsample_bytree: 0.8
+  learning_rate: 0.1
+  max_depth: 6
+  subsample: 0.8
+mlflow_tracking_uri: null
+model_type: ranker
+num_boost_round: 1000
+objective: binary:logistic
+random_seed: 42
+target: clicked
+test_split: 0.1
+train_split: 0.8
+val_split: 0.1

@@ -1,0 +1,14 @@
+control_model_id: ''
+guardrail_metrics: {}
+holdout_percentage: 0.0
+hypothesis: ''
+max_duration_days: 14
+min_sample_size: 1000
+name: default_exp
+power: 0.8
+primary_metric: ctr
+ramp_up_days: 0
+significance_level: 0.05
+targeting_rules: {}
+traffic_split: {}
+treatment_model_ids: []

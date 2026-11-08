@@ -1,0 +1,14 @@
+batch_size: 32
+cache_ttl_seconds: 300
+enable_batching: true
+enable_caching: true
+health_check_interval_seconds: 30
+host: 0.0.0.0
+log_predictions: true
+model_id: ''
+model_version: ''
+port: 8080
+prediction_log_path: null
+rate_limit_rps: 1000
+timeout_ms: 100
+workers: 4
